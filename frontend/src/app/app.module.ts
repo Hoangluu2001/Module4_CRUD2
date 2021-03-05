@@ -7,7 +7,7 @@ import { StudentListComponent } from './student/student-list/student-list.compon
 import {HttpClientModule} from "@angular/common/http";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CreateStudentComponent } from './student/create-student/create-student.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UpdateStudentComponent } from './student/update-student/update-student.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,7 +32,8 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
     FormsModule,
     BrowserAnimationsModule,
     NgxPaginationModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

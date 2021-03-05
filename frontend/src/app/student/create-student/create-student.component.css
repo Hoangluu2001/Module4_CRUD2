@@ -5,15 +5,15 @@
 }
 
 .nav-link:hover {
-  color: orange!important;
+  color: olivedrab !important;
 }
 
 .navbar-brand {
-  color: orange!important;
+  color: black!important;
   font-family: serif!important;
   font-size: 35px;
 }
 
 .navbar-brand:hover {
-  color: peru!important;
+  color: black!important;
 }

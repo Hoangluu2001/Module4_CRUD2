@@ -29,27 +29,59 @@
 </div>
 <div class="container">
   <form>
-    <div class="form-group">
+
+
+    <div class="form-group" [formGroup]="validateForm" (ngSubmit)="onSubmit()">
       <label>Name</label>
-      <input type="text" class="form-control" name="name" [(ngModel)]="student.name">
+      <input type="text" class="form-control" name="name" [(ngModel)]="student.name"  formControlName="name">
     </div>
-    <div class="form-group">
+    <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('name').invalid && validateForm.get('name').touched">
+      Invalid name!
+    </div>
+
+
+
+    <div class="form-group" [formGroup]="validateForm" (ngSubmit)="onSubmit()">
       <label>Position</label>
-      <input type="text" class="form-control" name="position" [(ngModel)]="student.position">
+      <input type="text" class="form-control" name="position" [(ngModel)]="student.position"  formControlName="position">
     </div>
-    <div class="form-group">
+    <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('position').invalid && validateForm.get('position').touched">
+      Invalid position!
+    </div>
+
+
+
+
+    <div class="form-group" [formGroup]="validateForm" (ngSubmit)="onSubmit()">
       <label>Office</label>
-      <input type="text" class="form-control" name="office" [(ngModel)]="student.office">
+      <input type="text" class="form-control" name="office" [(ngModel)]="student.office"  formControlName="office">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('office').invalid && validateForm.get('office').touched">
+      Invalid office!
     </div>
 
-    <div class="form-group">
+
+
+
+
+
+    <div class="form-group" [formGroup]="validateForm" (ngSubmit)="onSubmit()">
       <label>Age</label>
-      <input type="text" class="form-control" name="age" [(ngModel)]="student.age">
+      <input type="text" class="form-control" name="age" [(ngModel)]="student.age"  formControlName="age">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('age').invalid && validateForm.get('age').touched">
+      Invalid age!
     </div>
 
-    <div class="form-group">
+
+
+
+    <div class="form-group" [formGroup]="validateForm" (ngSubmit)="onSubmit()">
       <label>Start Date</label>
-      <input type="date" class="form-control" name="startDate" [(ngModel)]="student.startDate">
+      <input type="date" class="form-control" name="startDate" [(ngModel)]="student.startDate"  formControlName="startDate">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('startDate').invalid && validateForm.get('startDate').touched">
+      Invalid startDate!
     </div>
 
 
