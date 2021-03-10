@@ -50,4 +50,8 @@ export class CreateStudentComponent implements OnInit {
       }
     )
   }
+
+  gotoList() {
+    this.router.navigate(['student']);
+  }
 }

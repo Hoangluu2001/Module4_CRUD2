@@ -58,5 +58,9 @@ export class UpdateStudentComponent implements OnInit {
       },error => console.log(error)
     )
   }
+
+  gotoList() {
+    this.router.navigate(['student']);
+  }
 }
 

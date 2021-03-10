@@ -36,7 +36,7 @@
       <input type="text" class="form-control" name="name" [(ngModel)]="student.name"  formControlName="name">
     </div>
     <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('name').invalid && validateForm.get('name').touched">
-      Invalid name!
+       Name Không Hợp Lệ!
     </div>
 
 
@@ -46,7 +46,7 @@
       <input type="text" class="form-control" name="position" [(ngModel)]="student.position"  formControlName="position">
     </div>
     <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('position').invalid && validateForm.get('position').touched">
-      Invalid position!
+      Position Không Hợp Lệ!
     </div>
 
 
@@ -57,7 +57,7 @@
       <input type="text" class="form-control" name="office" [(ngModel)]="student.office"  formControlName="office">
     </div>
     <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('office').invalid && validateForm.get('office').touched">
-      Invalid office!
+      Office Không Hợp Lệ!
     </div>
 
 
@@ -70,7 +70,7 @@
       <input type="text" class="form-control" name="age" [(ngModel)]="student.age"  formControlName="age">
     </div>
     <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('age').invalid && validateForm.get('age').touched">
-      Invalid age!
+      Age Không Hợp Lệ!
     </div>
 
 
@@ -81,11 +81,12 @@
       <input type="date" class="form-control" name="startDate" [(ngModel)]="student.startDate"  formControlName="startDate">
     </div>
     <div class="alert alert-danger" role="alert" *ngIf="validateForm.get('startDate').invalid && validateForm.get('startDate').touched">
-      Invalid startDate!
+      StartDate Không Hợp Lệ!
     </div>
 
 
     <button class="btn btn-success" (click)="addStudent()">Add</button>
+    <button (click)="gotoList()" class="btn btn-primary ml-2">Quay lại</button>
   </form>
 </div>
 

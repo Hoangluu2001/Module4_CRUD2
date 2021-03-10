@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgxPaginationModule} from "ngx-pagination";
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { TempalteComponent } from './tempalte/tempalte.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { TempalteComponent } from './tempalte/tempalte.component';
     UpdateStudentComponent,
     NavbarComponent,
     TempalteComponent,
+    LoginComponent,
 
   ],
   imports: [
