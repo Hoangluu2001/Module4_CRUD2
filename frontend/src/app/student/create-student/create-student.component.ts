@@ -44,6 +44,7 @@ export class CreateStudentComponent implements OnInit {
         console.log(data);
         this.router.navigate(['']);
         this.student = new Student();
+        alert("Bạn Đã Thêm Thành Công");
       },
       error => {
         console.log(error)

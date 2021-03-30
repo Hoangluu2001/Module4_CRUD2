@@ -55,6 +55,7 @@ export class UpdateStudentComponent implements OnInit {
       data => {
         console.log(data);
         this.router.navigate(['']);
+        alert("Bạn Đã Cập Nhật Thành Công");
       },error => console.log(error)
     )
   }
